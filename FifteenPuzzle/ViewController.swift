@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // Turn on/off debug statements
+    var DEBUG:Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,21 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    // Connect to BoardView
+    @IBOutlet weak var boardView: BoardView!
+    
+    // Connect to all 15 buttons
+    @IBAction func tileSelected(_ sender: UIButton) {
+        let tag = sender.tag
+        NSLog("tileSelected: \(tag)")
+    }
+    
+    // Connect to shuffle buton
+    @IBAction func shuffleTiles(_ sender: AnyObject) { }
+    
+   
+    
+    
 }
 
