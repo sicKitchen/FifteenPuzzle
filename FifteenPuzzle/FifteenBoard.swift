@@ -25,7 +25,7 @@ class FifteenBoard{
     // space; repeat n times. We use this method to start a new game using a 
     // large value (e.g., 150) for n.
     func scramble(numTimes n : Int){
-        let max : UInt32 = 16      // highest tile
+        let max : UInt32 = 15      // highest tile
         let min : Int = 1          // lowest tile
         
         // Check if tile is slidable by sliding n times
@@ -34,31 +34,48 @@ class FifteenBoard{
             // get random number
             let randNum = getRandNum(max, min)
             
+            if DEBUG {NSLog("randNum \(randNum)")}
+            
             // get the current tiles row and column
             if let tile = getRowAndColumn(forTile: randNum) {
+                
+                if DEBUG {NSLog("tile.row \(tile.row) tile.column \(tile.column)")}
+                
+                
                 // check if we can slide the tile and perform it
                 if canSlideTile(atRow: tile.row, Column: tile.column) {
                     // we have sucessfully slide the tile here
                     count += 1
+                    
                 }
             }
+            if DEBUG {NSLog("Count \(count)")}
         }
+        
     }
     
     // Functions to check if tile can slide up, down, left, right
     // UP
     func canSlideTileUp(atRow r : Int, Column c : Int) -> Bool {
-        if DEBUG {NSLog("Tile above selected tile \(state[r-1][c])")}
+        //if DEBUG {NSLog("Tile above selected tile \(state[r-1][c])")}
+        
+        NSLog("in up function: R\(r)")
+        
+        if r == 0 {return false}
         
         // Check if tile can slide up
-        if state[r-1][c] == 0 {return true}
+        if state[r-1][c] == 0  {return true}
     
         return false;
     }
     
     // DOWN
     func canSlideTileDown(atRow r : Int, Column c : Int) -> Bool {
-        if DEBUG {NSLog("Tile below selected tile \(state[r+1][c])")}
+        //if DEBUG {NSLog("Tile below selected tile \(state[r+1][c])")}
+        
+        NSLog("in down function: R \(r)")
+        
+        if r == 3 {return false}
         
         // Check if tile can slide down
         if state[r+1][c] == 0 {return true}
@@ -68,7 +85,11 @@ class FifteenBoard{
     
     //LEFT
     func canSlideTileLeft(atRow r : Int, Column c : Int) -> Bool {
-        if DEBUG {NSLog("Tile to the left of selected tile \(state[r][c-1])")}
+        //if DEBUG {NSLog("Tile to the left of selected tile \(state[r][c-1])")}
+        
+        NSLog("in left function")
+        
+        if c == 0 {return false}
         
         // Check if tile can slide left
         if state[r][c-1] == 0 {return true}
@@ -78,7 +99,11 @@ class FifteenBoard{
     
     // RIGHT
     func canSlideTileRight(atRow r : Int, Column c : Int) -> Bool {
-        if DEBUG {NSLog("Tile to the right of selected tile \(state[r][c+1])")}
+        //if DEBUG {NSLog("Tile to the right of selected tile \(state[r][c+1])")}
+        
+        NSLog("in right function")
+        
+        if c == 3 {return false}
         
         // Check if tile can slide right
         if state[r][c+1] == 0 {return true}
@@ -150,7 +175,7 @@ class FifteenBoard{
             state[r][c+1] = slide
         }
 
-        if up && down && left && right == true {return true}
+        if up || down || left || right == true {return true}
         return false
     }
     
