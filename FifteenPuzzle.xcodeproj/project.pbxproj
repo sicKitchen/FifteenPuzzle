@@ -15,6 +15,7 @@
 		E2E5C7561E4EC3B200C8DFF6 /* FifteenPuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7551E4EC3B200C8DFF6 /* FifteenPuzzleTests.swift */; };
 		E2E5C7611E4EC3B200C8DFF6 /* FifteenPuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7601E4EC3B200C8DFF6 /* FifteenPuzzleUITests.swift */; };
 		E2E5C7731E4ECD8400C8DFF6 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7721E4ECD8400C8DFF6 /* BoardView.swift */; };
+		E2E5C7751E4ED80900C8DFF6 /* FifteenBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7741E4ED80900C8DFF6 /* FifteenBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E2E5C7601E4EC3B200C8DFF6 /* FifteenPuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifteenPuzzleUITests.swift; sourceTree = "<group>"; };
 		E2E5C7621E4EC3B200C8DFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E5C7721E4ECD8400C8DFF6 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		E2E5C7741E4ED80900C8DFF6 /* FifteenBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifteenBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				E2E5C7401E4EC3B200C8DFF6 /* AppDelegate.swift */,
 				E2E5C7721E4ECD8400C8DFF6 /* BoardView.swift */,
+				E2E5C7741E4ED80900C8DFF6 /* FifteenBoard.swift */,
 				E2E5C7421E4EC3B200C8DFF6 /* ViewController.swift */,
 				E2E5C7441E4EC3B200C8DFF6 /* Main.storyboard */,
 				E2E5C7471E4EC3B200C8DFF6 /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				E2E5C7731E4ECD8400C8DFF6 /* BoardView.swift in Sources */,
 				E2E5C7431E4EC3B200C8DFF6 /* ViewController.swift in Sources */,
+				E2E5C7751E4ED80900C8DFF6 /* FifteenBoard.swift in Sources */,
 				E2E5C7411E4EC3B200C8DFF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

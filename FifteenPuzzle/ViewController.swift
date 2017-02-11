@@ -28,14 +28,18 @@ class ViewController: UIViewController {
     
     // Connect to all 15 buttons
     @IBAction func tileSelected(_ sender: UIButton) {
-        let tag = sender.tag
-        NSLog("tileSelected: \(tag)")
+        if DEBUG {
+            let tag = sender.tag
+            NSLog("tileSelected: \(tag)")
+        }
+        
     }
     
     // Connect to shuffle buton
     @IBAction func shuffleTiles(_ sender: AnyObject) { }
     
    
+    
     
     
 }
