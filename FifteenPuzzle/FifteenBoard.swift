@@ -44,7 +44,7 @@ class FifteenBoard{
                 
                 // check if we can slide the tile and perform it
                 if canSlideTile(atRow: tile.row, Column: tile.column) {
-                    // we have sucessfully slide the tile here
+                    slideTile(atRow: tile.row, atColumn: tile.column)
                     count += 1
                     
                 }
@@ -119,6 +119,7 @@ class FifteenBoard{
         let left = canSlideTileLeft(atRow: r, Column: c)
         let right = canSlideTileRight(atRow: r, Column: c)
         
+        /*
         if up {
             // get current tile
             var current = getTile(atRow: r, atColumn: c)
@@ -174,10 +175,79 @@ class FifteenBoard{
             state[r][c] = current
             state[r][c+1] = slide
         }
-
+        */
+        
         if up || down || left || right == true {return true}
         return false
     }
+    
+    // Slide tile function
+    func slideTile(atRow r: Int, atColumn c:Int){
+        
+        let up = canSlideTileUp(atRow: r, Column: c)
+        let down = canSlideTileDown(atRow: r, Column: c)
+        let left = canSlideTileLeft(atRow: r, Column: c)
+        let right = canSlideTileRight(atRow: r, Column: c)
+        
+        if up {
+            // get current tile
+            var current = getTile(atRow: r, atColumn: c)
+            // get slide tile (where the 0 is)
+            var slide = getTile(atRow: r-1, atColumn: c)
+            // swap the current and the slide tile numbers
+            let tmp = current
+            current = slide
+            slide = tmp
+            // Set the new numbers to state
+            state[r][c] = current
+            state[r-1][c] = slide
+        } else
+            
+            if down {
+                // get current tile
+                var current = getTile(atRow: r, atColumn: c)
+                // get slide tile (where the 0 is)
+                var slide = getTile(atRow: r+1, atColumn: c)
+                // swap the current and the slide tile numbers
+                let tmp = current
+                current = slide
+                slide = tmp
+                // Set the new numbers to state
+                state[r][c] = current
+                state[r+1][c] = slide
+            } else
+                
+                if left {
+                    // get current tile
+                    var current = getTile(atRow: r, atColumn: c)
+                    // get slide tile (where the 0 is)
+                    var slide = getTile(atRow: r, atColumn: c-1)
+                    // swap the current and the slide tile numbers
+                    let tmp = current
+                    current = slide
+                    slide = tmp
+                    // Set the new numbers to state
+                    state[r][c] = current
+                    state[r][c-1] = slide
+                } else
+                    
+                    if right {
+                        // get current tile
+                        var current = getTile(atRow: r, atColumn: c)
+                        // get slide tile (where the 0 is)
+                        var slide = getTile(atRow: r, atColumn: c+1)
+                        // swap the current and the slide tile numbers
+                        let tmp = current
+                        current = slide
+                        slide = tmp
+                        // Set the new numbers to state
+                        state[r][c] = current
+                        state[r][c+1] = slide
+        }
+
+        
+    }
+    
     
     // Fetch the tile at the given position (0 is used for the space).
     func getTile(atRow r:Int, atColumn c:Int) -> Int {

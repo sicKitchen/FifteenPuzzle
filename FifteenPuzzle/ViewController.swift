@@ -33,6 +33,32 @@ class ViewController: UIViewController {
             NSLog("tileSelected: \(tag)")
         }
         
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let board = appDelegate.board // get model from app delegate
+        let pos = board!.getRowAndColumn(forTile: sender.tag)
+        let buttonBounds = sender.bounds
+        var buttonCenter = sender.center
+        var slide = true
+        if board!.canSlideTileUp(atRow: pos!.row, Column: pos!.column) {
+            buttonCenter.y -= buttonBounds.size.height
+        } else if board!.canSlideTileDown(atRow: pos!.row, Column: pos!.column) {
+            buttonCenter.y += buttonBounds.size.height
+        } else if board!.canSlideTileLeft(atRow: pos!.row, Column: pos!.column) {
+            buttonCenter.x -= buttonBounds.size.width
+        } else if board!.canSlideTileRight(atRow: pos!.row, Column: pos!.column) {
+            buttonCenter.x += buttonBounds.size.width
+        } else {
+            slide = false
+        }
+        
+        if slide {  // update model and view
+            board!.slideTile(atRow: pos!.row, atColumn: pos!.column)
+            //sender.center = buttonCenter // animate later
+            UIView.animate(withDuration:0.5, animations: {sender.center = buttonCenter})
+            //if (board!.isSolved()) { throwAPartyOnWin() }
+            
+        }
+        
     }
     
     // Connect to shuffle buton
