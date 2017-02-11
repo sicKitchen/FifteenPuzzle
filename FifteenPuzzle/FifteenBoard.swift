@@ -10,6 +10,7 @@ import Foundation
 
 
 class FifteenBoard{
+    
     // Turn on/off debug statements
     var DEBUG:Bool = true
     

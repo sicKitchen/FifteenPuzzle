@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+        
     // Connect to BoardView
     @IBOutlet weak var boardView: BoardView!
     
@@ -62,7 +63,12 @@ class ViewController: UIViewController {
     }
     
     // Connect to shuffle buton
-    @IBAction func shuffleTiles(_ sender: AnyObject) { }
+    @IBAction func shuffleTiles(_ sender: AnyObject) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let board = appDelegate.board
+        board?.scramble(numTimes: appDelegate.numShuffles)
+        self.boardView.setNeedsLayout() // will trigger layoutSubviews to be invoked
+    }
     
    
     

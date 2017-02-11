@@ -41,6 +41,16 @@ class BoardView: UIView {
         }
     }
     
+    override func awakeFromNib() {
+        //let tileImage = UIImage(named: "Tile")
+        for tag in 1 ... 15 {
+            let button = self.viewWithTag(tag) as! UIButton
+            //button.setBackgroundImage(tileImage, for: UIControlState())
+            //button.backgroundColor = UIColor.clear // transparent
+            button.imageView?.contentMode = .scaleAspectFit
+        }
+    }
+    
     func boardRect() -> CGRect { // get square for holding 4x4 tiles buttons
         let W = self.bounds.size.width
         let H = self.bounds.size.height

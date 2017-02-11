@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		E2E5C7411E4EC3B200C8DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7401E4EC3B200C8DFF6 /* AppDelegate.swift */; };
 		E2E5C7431E4EC3B200C8DFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7421E4EC3B200C8DFF6 /* ViewController.swift */; };
-		E2E5C7461E4EC3B200C8DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7441E4EC3B200C8DFF6 /* Main.storyboard */; };
+		E2E5C7461E4EC3B200C8DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7441E4EC3B200C8DFF6 /* Main.storyboard */; settings = {ASSET_TAGS = (tag, ); }; };
 		E2E5C7481E4EC3B200C8DFF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7471E4EC3B200C8DFF6 /* Assets.xcassets */; };
 		E2E5C74B1E4EC3B200C8DFF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7491E4EC3B200C8DFF6 /* LaunchScreen.storyboard */; };
 		E2E5C7561E4EC3B200C8DFF6 /* FifteenPuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7551E4EC3B200C8DFF6 /* FifteenPuzzleTests.swift */; };
 		E2E5C7611E4EC3B200C8DFF6 /* FifteenPuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7601E4EC3B200C8DFF6 /* FifteenPuzzleUITests.swift */; };
 		E2E5C7731E4ECD8400C8DFF6 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7721E4ECD8400C8DFF6 /* BoardView.swift */; };
 		E2E5C7751E4ED80900C8DFF6 /* FifteenBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7741E4ED80900C8DFF6 /* FifteenBoard.swift */; };
+		E2E5C7C61E4F238E00C8DFF6 /* 0-0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7B61E4F238E00C8DFF6 /* 0-0.jpeg */; };
+		E2E5C7C71E4F238E00C8DFF6 /* 0-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7B71E4F238E00C8DFF6 /* 0-1.jpeg */; };
+		E2E5C7C81E4F238E00C8DFF6 /* 0-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7B81E4F238E00C8DFF6 /* 0-2.jpeg */; };
+		E2E5C7C91E4F238E00C8DFF6 /* 0-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7B91E4F238E00C8DFF6 /* 0-3.jpeg */; };
+		E2E5C7CA1E4F238E00C8DFF6 /* 1-0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7BA1E4F238E00C8DFF6 /* 1-0.jpeg */; };
+		E2E5C7CB1E4F238E00C8DFF6 /* 1-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7BB1E4F238E00C8DFF6 /* 1-1.jpeg */; };
+		E2E5C7CC1E4F238E00C8DFF6 /* 1-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7BC1E4F238E00C8DFF6 /* 1-2.jpeg */; };
+		E2E5C7CD1E4F238E00C8DFF6 /* 1-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7BD1E4F238E00C8DFF6 /* 1-3.jpeg */; };
+		E2E5C7CE1E4F238E00C8DFF6 /* 2-0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7BE1E4F238E00C8DFF6 /* 2-0.jpeg */; };
+		E2E5C7CF1E4F238E00C8DFF6 /* 2-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7BF1E4F238E00C8DFF6 /* 2-1.jpeg */; };
+		E2E5C7D01E4F238E00C8DFF6 /* 2-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7C01E4F238E00C8DFF6 /* 2-2.jpeg */; };
+		E2E5C7D11E4F238E00C8DFF6 /* 2-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7C11E4F238E00C8DFF6 /* 2-3.jpeg */; };
+		E2E5C7D21E4F238E00C8DFF6 /* 3-0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7C21E4F238E00C8DFF6 /* 3-0.jpeg */; };
+		E2E5C7D31E4F238E00C8DFF6 /* 3-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7C31E4F238E00C8DFF6 /* 3-1.jpeg */; };
+		E2E5C7D41E4F238E00C8DFF6 /* 3-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7C41E4F238E00C8DFF6 /* 3-2.jpeg */; };
+		E2E5C7D51E4F238E00C8DFF6 /* 3-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7C51E4F238E00C8DFF6 /* 3-3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +67,22 @@
 		E2E5C7621E4EC3B200C8DFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E5C7721E4ECD8400C8DFF6 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		E2E5C7741E4ED80900C8DFF6 /* FifteenBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifteenBoard.swift; sourceTree = "<group>"; };
+		E2E5C7B61E4F238E00C8DFF6 /* 0-0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0-0.jpeg"; sourceTree = "<group>"; };
+		E2E5C7B71E4F238E00C8DFF6 /* 0-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0-1.jpeg"; sourceTree = "<group>"; };
+		E2E5C7B81E4F238E00C8DFF6 /* 0-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0-2.jpeg"; sourceTree = "<group>"; };
+		E2E5C7B91E4F238E00C8DFF6 /* 0-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "0-3.jpeg"; sourceTree = "<group>"; };
+		E2E5C7BA1E4F238E00C8DFF6 /* 1-0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-0.jpeg"; sourceTree = "<group>"; };
+		E2E5C7BB1E4F238E00C8DFF6 /* 1-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-1.jpeg"; sourceTree = "<group>"; };
+		E2E5C7BC1E4F238E00C8DFF6 /* 1-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-2.jpeg"; sourceTree = "<group>"; };
+		E2E5C7BD1E4F238E00C8DFF6 /* 1-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-3.jpeg"; sourceTree = "<group>"; };
+		E2E5C7BE1E4F238E00C8DFF6 /* 2-0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-0.jpeg"; sourceTree = "<group>"; };
+		E2E5C7BF1E4F238E00C8DFF6 /* 2-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-1.jpeg"; sourceTree = "<group>"; };
+		E2E5C7C01E4F238E00C8DFF6 /* 2-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-2.jpeg"; sourceTree = "<group>"; };
+		E2E5C7C11E4F238E00C8DFF6 /* 2-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-3.jpeg"; sourceTree = "<group>"; };
+		E2E5C7C21E4F238E00C8DFF6 /* 3-0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-0.jpeg"; sourceTree = "<group>"; };
+		E2E5C7C31E4F238E00C8DFF6 /* 3-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-1.jpeg"; sourceTree = "<group>"; };
+		E2E5C7C41E4F238E00C8DFF6 /* 3-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-2.jpeg"; sourceTree = "<group>"; };
+		E2E5C7C51E4F238E00C8DFF6 /* 3-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-3.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +141,22 @@
 				E2E5C7471E4EC3B200C8DFF6 /* Assets.xcassets */,
 				E2E5C7491E4EC3B200C8DFF6 /* LaunchScreen.storyboard */,
 				E2E5C74C1E4EC3B200C8DFF6 /* Info.plist */,
+				E2E5C7B61E4F238E00C8DFF6 /* 0-0.jpeg */,
+				E2E5C7B71E4F238E00C8DFF6 /* 0-1.jpeg */,
+				E2E5C7B81E4F238E00C8DFF6 /* 0-2.jpeg */,
+				E2E5C7B91E4F238E00C8DFF6 /* 0-3.jpeg */,
+				E2E5C7BA1E4F238E00C8DFF6 /* 1-0.jpeg */,
+				E2E5C7BB1E4F238E00C8DFF6 /* 1-1.jpeg */,
+				E2E5C7BC1E4F238E00C8DFF6 /* 1-2.jpeg */,
+				E2E5C7BD1E4F238E00C8DFF6 /* 1-3.jpeg */,
+				E2E5C7BE1E4F238E00C8DFF6 /* 2-0.jpeg */,
+				E2E5C7BF1E4F238E00C8DFF6 /* 2-1.jpeg */,
+				E2E5C7C01E4F238E00C8DFF6 /* 2-2.jpeg */,
+				E2E5C7C11E4F238E00C8DFF6 /* 2-3.jpeg */,
+				E2E5C7C21E4F238E00C8DFF6 /* 3-0.jpeg */,
+				E2E5C7C31E4F238E00C8DFF6 /* 3-1.jpeg */,
+				E2E5C7C41E4F238E00C8DFF6 /* 3-2.jpeg */,
+				E2E5C7C51E4F238E00C8DFF6 /* 3-3.jpeg */,
 			);
 			path = FifteenPuzzle;
 			sourceTree = "<group>";
@@ -193,6 +241,9 @@
 		E2E5C7351E4EC3B200C8DFF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					tag,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = wsu.vancouver;
@@ -241,7 +292,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E5C7CF1E4F238E00C8DFF6 /* 2-1.jpeg in Resources */,
 				E2E5C74B1E4EC3B200C8DFF6 /* LaunchScreen.storyboard in Resources */,
+				E2E5C7D51E4F238E00C8DFF6 /* 3-3.jpeg in Resources */,
+				E2E5C7C71E4F238E00C8DFF6 /* 0-1.jpeg in Resources */,
+				E2E5C7CA1E4F238E00C8DFF6 /* 1-0.jpeg in Resources */,
+				E2E5C7CE1E4F238E00C8DFF6 /* 2-0.jpeg in Resources */,
+				E2E5C7CD1E4F238E00C8DFF6 /* 1-3.jpeg in Resources */,
+				E2E5C7D41E4F238E00C8DFF6 /* 3-2.jpeg in Resources */,
+				E2E5C7D11E4F238E00C8DFF6 /* 2-3.jpeg in Resources */,
+				E2E5C7C61E4F238E00C8DFF6 /* 0-0.jpeg in Resources */,
+				E2E5C7C81E4F238E00C8DFF6 /* 0-2.jpeg in Resources */,
+				E2E5C7C91E4F238E00C8DFF6 /* 0-3.jpeg in Resources */,
+				E2E5C7CC1E4F238E00C8DFF6 /* 1-2.jpeg in Resources */,
+				E2E5C7CB1E4F238E00C8DFF6 /* 1-1.jpeg in Resources */,
+				E2E5C7D21E4F238E00C8DFF6 /* 3-0.jpeg in Resources */,
+				E2E5C7D01E4F238E00C8DFF6 /* 2-2.jpeg in Resources */,
+				E2E5C7D31E4F238E00C8DFF6 /* 3-1.jpeg in Resources */,
 				E2E5C7481E4EC3B200C8DFF6 /* Assets.xcassets in Resources */,
 				E2E5C7461E4EC3B200C8DFF6 /* Main.storyboard in Resources */,
 			);
