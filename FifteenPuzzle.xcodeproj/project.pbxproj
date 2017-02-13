@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2B0F7D41E4FB77A009CB605 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = E2B0F7D31E4FB77A009CB605 /* Title.png */; };
 		E2E5C7411E4EC3B200C8DFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7401E4EC3B200C8DFF6 /* AppDelegate.swift */; };
 		E2E5C7431E4EC3B200C8DFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5C7421E4EC3B200C8DFF6 /* ViewController.swift */; };
 		E2E5C7461E4EC3B200C8DFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E5C7441E4EC3B200C8DFF6 /* Main.storyboard */; settings = {ASSET_TAGS = (tag, ); }; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2B0F7D31E4FB77A009CB605 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
 		E2E5C73D1E4EC3B200C8DFF6 /* FifteenPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FifteenPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E5C7401E4EC3B200C8DFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2E5C7421E4EC3B200C8DFF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				E2E5C7C31E4F238E00C8DFF6 /* 3-1.jpeg */,
 				E2E5C7C41E4F238E00C8DFF6 /* 3-2.jpeg */,
 				E2E5C7C51E4F238E00C8DFF6 /* 3-3.jpeg */,
+				E2B0F7D31E4FB77A009CB605 /* Title.png */,
 			);
 			path = FifteenPuzzle;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				E2E5C7C71E4F238E00C8DFF6 /* 0-1.jpeg in Resources */,
 				E2E5C7CA1E4F238E00C8DFF6 /* 1-0.jpeg in Resources */,
 				E2E5C7CE1E4F238E00C8DFF6 /* 2-0.jpeg in Resources */,
+				E2B0F7D41E4FB77A009CB605 /* Title.png in Resources */,
 				E2E5C7CD1E4F238E00C8DFF6 /* 1-3.jpeg in Resources */,
 				E2E5C7D41E4F238E00C8DFF6 /* 3-2.jpeg in Resources */,
 				E2E5C7D11E4F238E00C8DFF6 /* 2-3.jpeg in Resources */,
@@ -589,6 +593,7 @@
 				E2E5C7671E4EC3B200C8DFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2E5C7681E4EC3B200C8DFF6 /* Build configuration list for PBXNativeTarget "FifteenPuzzleTests" */ = {
 			isa = XCConfigurationList;
@@ -597,6 +602,7 @@
 				E2E5C76A1E4EC3B200C8DFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2E5C76B1E4EC3B200C8DFF6 /* Build configuration list for PBXNativeTarget "FifteenPuzzleUITests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +611,7 @@
 				E2E5C76D1E4EC3B200C8DFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,6 +11,8 @@ import Foundation
 
 class FifteenBoard{
     
+    var SOLVED:Bool = false
+    
     // Turn on/off debug statements
     var DEBUG:Bool = true
     
@@ -52,6 +54,7 @@ class FifteenBoard{
             }
             if DEBUG {NSLog("Count \(count)")}
         }
+        SOLVED = false
         
     }
     
@@ -120,64 +123,6 @@ class FifteenBoard{
         let left = canSlideTileLeft(atRow: r, Column: c)
         let right = canSlideTileRight(atRow: r, Column: c)
         
-        /*
-        if up {
-            // get current tile
-            var current = getTile(atRow: r, atColumn: c)
-            // get slide tile (where the 0 is)
-            var slide = getTile(atRow: r-1, atColumn: c)
-            // swap the current and the slide tile numbers
-            let tmp = current
-            current = slide
-            slide = tmp
-            // Set the new numbers to state
-            state[r][c] = current
-            state[r-1][c] = slide
-        } else
-        
-        if down {
-            // get current tile
-            var current = getTile(atRow: r, atColumn: c)
-            // get slide tile (where the 0 is)
-            var slide = getTile(atRow: r+1, atColumn: c)
-            // swap the current and the slide tile numbers
-            let tmp = current
-            current = slide
-            slide = tmp
-            // Set the new numbers to state
-            state[r][c] = current
-            state[r+1][c] = slide
-        } else
-        
-        if left {
-            // get current tile
-            var current = getTile(atRow: r, atColumn: c)
-            // get slide tile (where the 0 is)
-            var slide = getTile(atRow: r, atColumn: c-1)
-            // swap the current and the slide tile numbers
-            let tmp = current
-            current = slide
-            slide = tmp
-            // Set the new numbers to state
-            state[r][c] = current
-            state[r][c-1] = slide
-        } else
-        
-        if right {
-            // get current tile
-            var current = getTile(atRow: r, atColumn: c)
-            // get slide tile (where the 0 is)
-            var slide = getTile(atRow: r, atColumn: c+1)
-            // swap the current and the slide tile numbers
-            let tmp = current
-            current = slide
-            slide = tmp
-            // Set the new numbers to state
-            state[r][c] = current
-            state[r][c+1] = slide
-        }
-        */
-        
         if up || down || left || right == true {return true}
         return false
     }
@@ -204,47 +149,49 @@ class FifteenBoard{
             state[r-1][c] = slide
         } else
             
-            if down {
-                // get current tile
-                var current = getTile(atRow: r, atColumn: c)
-                // get slide tile (where the 0 is)
-                var slide = getTile(atRow: r+1, atColumn: c)
-                // swap the current and the slide tile numbers
-                let tmp = current
-                current = slide
-                slide = tmp
-                // Set the new numbers to state
-                state[r][c] = current
-                state[r+1][c] = slide
-            } else
+        if down {
+            // get current tile
+            var current = getTile(atRow: r, atColumn: c)
+            // get slide tile (where the 0 is)
+            var slide = getTile(atRow: r+1, atColumn: c)
+            // swap the current and the slide tile numbers
+            let tmp = current
+            current = slide
+            slide = tmp
+            // Set the new numbers to state
+            state[r][c] = current
+            state[r+1][c] = slide
+        } else
                 
-                if left {
-                    // get current tile
-                    var current = getTile(atRow: r, atColumn: c)
-                    // get slide tile (where the 0 is)
-                    var slide = getTile(atRow: r, atColumn: c-1)
-                    // swap the current and the slide tile numbers
-                    let tmp = current
-                    current = slide
-                    slide = tmp
-                    // Set the new numbers to state
-                    state[r][c] = current
-                    state[r][c-1] = slide
-                } else
+        if left {
+            // get current tile
+            var current = getTile(atRow: r, atColumn: c)
+            // get slide tile (where the 0 is)
+            var slide = getTile(atRow: r, atColumn: c-1)
+            // swap the current and the slide tile numbers
+            let tmp = current
+            current = slide
+            slide = tmp
+            // Set the new numbers to state
+            state[r][c] = current
+            state[r][c-1] = slide
+        } else
                     
-                    if right {
-                        // get current tile
-                        var current = getTile(atRow: r, atColumn: c)
-                        // get slide tile (where the 0 is)
-                        var slide = getTile(atRow: r, atColumn: c+1)
-                        // swap the current and the slide tile numbers
-                        let tmp = current
-                        current = slide
-                        slide = tmp
-                        // Set the new numbers to state
-                        state[r][c] = current
-                        state[r][c+1] = slide
+        if right {
+            // get current tile
+            var current = getTile(atRow: r, atColumn: c)
+            // get slide tile (where the 0 is)
+            var slide = getTile(atRow: r, atColumn: c+1)
+            // swap the current and the slide tile numbers
+            let tmp = current
+            current = slide
+            slide = tmp
+            // Set the new numbers to state
+            state[r][c] = current
+            state[r][c+1] = slide
         }
+        
+        SOLVED = isSolved()
 
         
     }
@@ -286,11 +233,15 @@ class FifteenBoard{
         for row in 0...3 {
             for column in 0...3 {
                 if state[row][column] != truth[row][column] {
+                    NSLog("Checking solution [\(row)][\(column)] not equal \n")
+                    NSLog( "state: \(state)\n")
+                    NSLog( "Truth: \(truth)\n")
                     return false
                 }
             }
         }
-
+        
+        NSLog("PUZZLE SOLVED!")
         return true
     }
     
