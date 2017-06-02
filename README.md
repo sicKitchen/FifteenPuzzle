@@ -6,7 +6,6 @@ A basic iOS 15 tile puzzle app.
 
 **[Spencer Kitchen](mailto:spencer.kitchen@wsu.edu)**
 
-Sudent ID: 11480841
 
 ## Description
 
