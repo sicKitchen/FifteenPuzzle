@@ -6,6 +6,8 @@ A basic iOS 15 tile puzzle app.
 
 **[Spencer Kitchen](mailto:spencer.kitchen@wsu.edu)**
 
+* email: sckitchen.dev@gmail.com
+
 
 ## Description
 
